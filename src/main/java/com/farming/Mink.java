@@ -4,9 +4,9 @@ public class Mink {
 
     private int number;
     private int ageInDays;
-    private FurCoat color;
+    private FurColor color;
 
-    public Mink(int number, int ageInDays, FurCoat color) {
+    public Mink(int number, int ageInDays, FurColor color) {
         this.number = number;
         this.ageInDays = ageInDays;
         this.color = color;
@@ -21,11 +21,11 @@ public class Mink {
         this.number = number;
     }
 
-    public FurCoat getColor() {
+    public FurColor getColor() {
         return color;
     }
 
-    public void setColor(FurCoat color) {
+    public void setColor(FurColor color) {
         this.color = color;
     }
 

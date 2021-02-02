@@ -13,4 +13,14 @@ class ClassTestsMinkfactory {
 		Assertions.assertThat(result.size()).isEqualTo(5);
 	}
 
+	@Example
+	void getOneForFree(){
+		InfinityMinkCoatShop shop = new InfinityMinkCoatShop();
+		int everyNOneFree = 5;
+		ArrayList<FurCoat> result = new OneFreeCampaign(shop, everyNOneFree)
+				.orderFurcoats(everyNOneFree, FurColor.brown);
+
+		Assertions.assertThat(result.size()).isEqualTo(everyNOneFree + 1);
+	}
+
 }
